@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard Moche</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .leaderboard-container {
+            background-color: var(--black);
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .leaderboard-header {
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .leaderboard-table {
+            width: 80%;
+            max-width: 800px;
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .leaderboard-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .leaderboard-table th {
+            background-color: var(--red);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .leaderboard-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--black);
+        }
+
+        .leaderboard-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .leaderboard-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .position {
+            font-weight: bold;
+            width: 50px;
+        }
+
+        .points {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .back-button {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: var(--white);
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <div class="leaderboard-container">
+        <div class="leaderboard-header">
+            <h1>Leaderboard Moche</h1>
+            <p>Top jogadores com mais pontos</p>
+        </div>
+        
+        <div class="leaderboard-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Jogador</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="position">1º</td>
+                        <td>João Silva</td>
+                        <td class="points">45,000</td>
+                    </tr>
+                    <tr>
+                        <td class="position">2º</td>
+                        <td>Maria Santos</td>
+                        <td class="points">38,500</td>
+                    </tr>
+                    <tr>
+                        <td class="position">3º</td>
+                        <td>Pedro Costa</td>
+                        <td class="points">32,000</td>
+                    </tr>
+                    <tr>
+                        <td class="position">4º</td>
+                        <td>Ana Pereira</td>
+                        <td class="points">28,750</td>
+                    </tr>
+                    <tr>
+                        <td class="position">5º</td>
+                        <td>Carlos Oliveira</td>
+                        <td class="points">25,000</td>
+                    </tr>
+                    <tr>
+                        <td class="position">6º</td>
+                        <td>Sofia Martins</td>
+                        <td class="points">22,500</td>
+                    </tr>
+                    <tr>
+                        <td class="position">7º</td>
+                        <td>Miguel Ferreira</td>
+                        <td class="points">20,000</td>
+                    </tr>
+                    <tr>
+                        <td class="position">8º</td>
+                        <td>Beatriz Rodrigues</td>
+                        <td class="points">18,000</td>
+                    </tr>
+                    <tr>
+                        <td class="position">9º</td>
+                        <td>Tiago Alves</td>
+                        <td class="points">15,500</td>
+                    </tr>
+                    <tr>
+                        <td class="position">10º</td>
+                        <td>Inês Sousa</td>
+                        <td class="points">12,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+</body>
+</html> 

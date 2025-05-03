@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Moche</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .shop-container {
+            background-color: var(--black);
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .shop-header {
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .shop-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .shop-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .shop-item:hover {
+            transform: translateY(-5px);
+            background-color: var(--red);
+            color: var(--white);
+        }
+
+        .shop-item h3 {
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+
+        .shop-item p {
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+
+        .shop-item .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .shop-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .back-button {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .back-button:hover {
+            background-color: var(--white);
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <div class="shop-container">
+        <div class="shop-header">
+            <h1>Loja Moche</h1>
+            <p>Use seus pontos para comprar produtos exclusivos!</p>
+        </div>
+        
+        <div class="shop-items">
+            <div class="shop-item" data-cost="100" data-id="1">
+                <h3>Pack 5GBytes</h3>
+                <img src="5G.png" alt="5G">
+                <p class="price">2500 pontos</p>
+            </div>
+            <div class="shop-item" data-cost="200" data-id="2">
+                <h3>Vale Cinema NOS</h3>
+                <img src="ValeCinema.png" alt="Vale Cinema">
+                <p class="price">20000 pontos</p>
+            </div>
+            <div class="shop-item" data-cost="300" data-id="3">
+                <h3>Merch da MOCHE</h3>
+                <img src="merch.png" alt="Merch Moche">
+                <p class="price">15000 pontos</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+</body>
+</html> 

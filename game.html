@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moche Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: var(--black);
+            min-height: 100vh;
+        }
+
+        #gameCanvas {
+            background-color: var(--white);
+            border: 4px solid var(--red);
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .game-info {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .points-display {
+            font-size: 2rem;
+            color: var(--red);
+            margin-bottom: 1rem;
+        }
+
+        .back-button {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .back-button:hover {
+            background-color: var(--white);
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="points-display">Pontos: <span id="points">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 

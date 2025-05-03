@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moche</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">MOCHE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Moche Logo" class="main-logo">
+                </div>
+                <h1>Bem-vindo à Moche</h1>
+                <p>Transformando ideias em realidade</p>
+                <div class="button-container">
+                    <button class="cta-button" onclick="window.location.href='game.html'">Jogar</button>
+                    <button class="cta-button" onclick="window.location.href='shop.html'">Loja</button>
+                    <button class="cta-button" onclick="window.location.href='leaderboard.html'">Leaderboard</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <p>Somos uma empresa dedicada a criar soluções inovadoras para os nossos clientes.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contacte-nos</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Moche. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
